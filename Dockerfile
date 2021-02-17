@@ -3,7 +3,7 @@ ENV container=docker
 
 RUN set -ex \
  && dnf update -y \
- && dnf install -y vim wget net-tools iproute traceroute bash-completion procps iputils htop \
+ && dnf install -y vim wget net-tools iproute traceroute bash-completion procps iputils \
  && echo "TZ='Asia/Shanghai'; export TZ" >> /etc/profile \
  && ln -sf /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime \
  && chattr +i /etc/localtime \
